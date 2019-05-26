@@ -143,6 +143,16 @@ paths:
           description: "パスワード"
           required: true
           type: "string"
+        - name: "last_name"
+          in: "formData"
+          description: "苗字"
+          required: false
+          type: "string"
+        - name: "first_name"
+          in: "formData"
+          description: "名前"
+          required: false
+          type: "string"
       responses:
         200:
           description: ""
@@ -202,7 +212,7 @@ paths:
         - name: "content"
           in: "formData"
           description: "記事の内容"
-          required: true
+          required: false
           type: "string"
         - name: "user_id"
           in: "formData"
@@ -212,7 +222,7 @@ paths:
         - name: "category_id"
           in: "formData"
           description: "カテゴリーID"
-          required: true
+          required: false
           type: "integer"
       responses:
         200:
@@ -263,7 +273,7 @@ paths:
         - name: "content"
           in: "formData"
           description: "記事の内容"
-          required: true
+          required: false
           type: "string"
         - name: "user_id"
           in: "formData"
@@ -273,7 +283,7 @@ paths:
         - name: "category_id"
           in: "formData"
           description: "カテゴリーID"
-          required: true
+          required: false
           type: "integer"
       responses:
         200:
